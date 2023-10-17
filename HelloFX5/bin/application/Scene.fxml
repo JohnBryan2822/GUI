@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <CheckBox fx:id="myCheckbox" layoutX="148.0" layoutY="337.0" mnemonicParsing="false" onAction="#change" text="ON / OFF">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="myLabel" layoutX="189.0" layoutY="235.0" text="OFF">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="myImageView" fitHeight="177.0" fitWidth="129.0" layoutX="156.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="radioLabel" alignment="CENTER" layoutX="367.0" layoutY="87.0" prefHeight="32.0" prefWidth="218.0" text="Select what you want">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rButton1" layoutX="438.0" layoutY="191.0" mnemonicParsing="false" onAction="#getFood" text="Pizza">
+         <toggleGroup>
+            <ToggleGroup fx:id="food" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rButton2" layoutX="438.0" layoutY="226.0" mnemonicParsing="false" onAction="#getFood" text="Chicken" toggleGroup="$food" />
+      <RadioButton fx:id="rButton3" layoutX="438.0" layoutY="262.0" mnemonicParsing="false" onAction="#getFood" text="Meat" toggleGroup="$food" />
+   </children>
+</AnchorPane>
