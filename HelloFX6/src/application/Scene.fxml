@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="myPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <DatePicker fx:id="myDatePicker" layoutX="54.0" layoutY="181.0" onAction="#getDate" promptText="Enter a date" />
+      <Label fx:id="myLabel" alignment="CENTER" layoutY="76.0" prefHeight="50.0" prefWidth="262.0" text="Label">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <ColorPicker fx:id="myColorPicker" layoutX="69.0" layoutY="270.0" onAction="#changeColor" />
+      <ChoiceBox fx:id="myChoiceBox" layoutX="410.0" layoutY="194.0" prefWidth="150.0" />
+      <Label fx:id="choiceBoxLabel" alignment="CENTER" layoutX="380.0" layoutY="76.0" prefHeight="38.0" prefWidth="210.0" text="Select what you wana eat">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Slider fx:id="mySlider" layoutX="293.0" layoutY="39.0" majorTickUnit="10.0" orientation="VERTICAL" prefHeight="307.0" prefWidth="14.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+      <Label fx:id="sliderLabel" layoutX="364.0" layoutY="311.0" text="Label">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
